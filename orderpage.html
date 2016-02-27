@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="commonModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="orderpage.css">
+    <!--<link rel="stylesheet" href="/switch.css">-->
+    <!--<link rel="stylesheet" href="/shadow.css">-->
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="orderpage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/jssor.slider.mini.js"></script>
+</head>
+<body ng-controller="commonController" class="light-green">
+<nav class="navbar navbar-default top-menu">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><span style="font-weight: bold; color:black;font-style: italic; font-size: xx-large;">food</span>
+                <span style="font-weight: bold;font-style: italic; color: white; margin-left: -2px; font-size: xx-large;">Wizer</span></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse float-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#" class="white-color" style="font-size: larger">Cart</a></li>
+                <li><a href="#" class="white-color" style="font-size: larger">Track Order</a></li>
+                <li class="dropdown1">
+                    <a href="#" class="white-color" style="font-size: larger">
+                        Daripa<span class="caret"></span></a>
+                    <ul class="nav dropdown-content top-bar-dropdown">
+                        <li> <a href="#" class="dropdown-item" >My Profile</a></li>
+                        <li><a href="#" class="dropdown-item" >My Orders</a></li>
+                        <li><a href="#" class="dropdown-item" >Settings</a></li>
+                        <li><a href="#" class="dropdown-item" >Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+        <div class="clear-all">
+
+        </div>
+    </div><!-- /.container-fluid -->
+</nav><!--  Top menu end shere  -->
+<div class="container-modified"><!--  Mid Container Starts here-->
+    <div class="row ">
+        <div class="col-md-3 col-lg-3 white-color-background left-row well">&nbsp;
+            <h2 style="font-weight: bold;">Categories</h2>
+            <hr/>
+            <form action="">
+                <ul class="vert-dropdown-ul">
+                    <li class="list-group-item xx-largefont" ng-repeat="cat in categories" >
+                        {{cat.text}}
+                        <div class="material-switch pull-right">
+                            <input id="{{cat.text}}" name="{{cat.text}}" type="checkbox" ng-model="cat.done"/>
+                            <label for="{{cat.text}}" class="label-success"></label>
+                        </div>
+                    </li>
+                </ul>
+                <div class="float-right">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+                <div class="clear-all"></div>
+            </form>
+        </div>
+        <div class="col-md-6 col-lg-6 white-color-background centre-row  well">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <h4 class=" border-right-thin">Breakfast</h4>
+                    <hr class="food-menu-hr"/>
+                    <br/>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <h4 class=" border-right-thin">Lunch</h4>
+                    <hr class="food-menu-hr invisible"/>
+                    <br/>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <h4 class=" border-right-thin">Dinner</h4>
+                    <hr class="food-menu-hr invisible"/>
+                    <br/>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <h4 class=" border-right-thin">Party Planner</h4>
+                    <hr class="food-menu-hr invisible"/>
+                    <br/>
+                </div>
+                </div>
+                    <div id="jssor_1" style="position: relative; margin: 0 auto; right: 0px; top: 0px; left: 0px; width: 600px; height: 230px; overflow: hidden; visibility: hidden;">
+                        <!-- Loading Screen -->
+                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                            <div style="position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                        </div>
+                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 250px; overflow: hidden;">
+                            <div data-p="112.50" style="display: none;">
+                                <a href="#">
+                                <img data-u="image" src="images/tasty.jpg" />
+                                <div data-u="caption" data-t="0" style="position: absolute; top: 310px; background-color: #000000; font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">Tasty and Spicy</div>
+                                </a>
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <a href="#">
+                                <img data-u="image" src="images/thali.jpg" />
+                                <!--<div data-u="caption" data-t="1" data-3d="1" style="position: absolute; top: -50px; left: 125px; width: 350px; height: 30px; background-color:#000000 ; font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">Ghar ki Thali</div>-->
+                                <div data-u="caption" data-t="0" style="position: absolute; top: 320px; background-color: #000000; font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">Ghar ki Thali</div>
+                                </a>
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <a href="#">
+                                <img data-u="image" src="images/nonveg.jpg" />
+                                <div data-u="caption" data-t="0" style="position: absolute; top: 320px; background-color: #000000; font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">Crispy Non-Veg</div>
+                                </a>
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <a href="#">
+                                <img data-u="image" src="images/discount.jpg" />
+                                <div data-u="caption" data-t="0" style="position: absolute; top: 320px; background-color: #000000; font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">Discount Offers</div>
+                                </a>
+                            </div>
+                            <div data-u="navigator" class="jssorb01" style="bottom:36px;right:16px;">
+                                <div data-u="prototype" style="width:12px;height:12px;"></div>
+                            </div>
+                            <!-- Arrow Navigator -->
+                            <span data-u="arrowleft" class="jssora02l" style="top:75px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+                            <span data-u="arrowright" class="jssora02r" style="top:75px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+                        </div>
+                        </div>
+             &nbsp;
+
+            <div class="row">
+                <div ng-repeat="item in lunchItems">
+                    <div class="food-item-block-outer col-md-4 col-lg-4 clear-fix">
+                        <div class="food-item-block-inner">
+                            <div class="img-block">
+                                <img src="images/download.jpg" class="full-size-img img-rounded"/>
+                            </div>
+                            <div class="desc-block">
+                                <h4>{{item.title}}</h4>
+                                <h6>Calories: {{item.calories}}</h6>
+                                <span class="reduce-size">{{item.desc}}</span>
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-md-offset-8 col-lg-offset-8">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 white-color-background right-row  well">
+            <h2>Your Order</h2>
+            <hr/>
+            <div class="list-of-orders">
+                <li class="list-group-item">
+                    Veg Bengali Thali
+                            <span class="badge">
+                            <span class="glyphicon glyphicon-plus"></span>
+                                2
+                            <span class="glyphicon glyphicon-minus"></span>
+                            </span>
+                </li>
+                </ul>
+            </div>
+            <hr/>
+            <h4>SubTotal: </h4>
+            <h4>Tax: </h4>
+            <h3>Total: </h3>
+        </div>
+    </div>
+</div><!--  Mid Container Ends here-->
+<footer id="footer">
+    <div class="container">
+        <p class="muted credit">
+            Developed and owned by FoodWizer
+        </p>
+    </div>
+</footer>
+<script>
+    $(document).ready(function() {
+
+        var jssor_1_SlideoTransitions = [
+            [{b:0,d:600,y:-290,e:{y:27}}],
+            [{b:0,d:1000,y:185},{b:1000,d:500,o:-1},{b:1500,d:500,o:1},{b:2000,d:1500,r:360},{b:3500,d:1000,rX:30},{b:4500,d:500,rX:-30},{b:5000,d:1000,rY:30},{b:6000,d:500,rY:-30},{b:6500,d:500,sX:1},{b:7000,d:500,sX:-1},{b:7500,d:500,sY:1},{b:8000,d:500,sY:-1},{b:8500,d:500,kX:30},{b:9000,d:500,kX:-30},{b:9500,d:500,kY:30},{b:10000,d:500,kY:-30},{b:10500,d:500,c:{x:87.50,t:-87.50}},{b:11000,d:500,c:{x:-87.50,t:87.50}}],
+            [{b:0,d:600,x:410,e:{x:27}}],
+            [{b:-1,d:1,o:-1},{b:0,d:600,o:1,e:{o:5}}],
+            [{b:-1,d:1,c:{x:175.0,t:-175.0}},{b:0,d:800,c:{x:-175.0,t:175.0},e:{c:{x:7,t:7}}}],
+            [{b:-1,d:1,o:-1},{b:0,d:600,x:-570,o:1,e:{x:6}}],
+            [{b:-1,d:1,o:-1,r:-180},{b:0,d:800,o:1,r:180,e:{r:7}}],
+            [{b:0,d:1000,y:80,e:{y:24}},{b:1000,d:1100,x:570,y:170,o:-1,r:30,sX:9,sY:9,e:{x:2,y:6,r:1,sX:5,sY:5}}],
+            [{b:2000,d:600,rY:30}],
+            [{b:0,d:500,x:-105},{b:500,d:500,x:230},{b:1000,d:500,y:-120},{b:1500,d:500,x:-70,y:120},{b:2600,d:500,y:-80},{b:3100,d:900,y:160,e:{y:24}}],
+            [{b:0,d:1000,o:-0.4,rX:2,rY:1},{b:1000,d:1000,rY:1},{b:2000,d:1000,rX:-1},{b:3000,d:1000,rY:-1},{b:4000,d:1000,o:0.4,rX:-1,rY:-1}]
+        ];
+
+        var jssor_1_options = {
+            $AutoPlay: true,
+            $Idle: 2000,
+            $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions,
+                $Breaks: [
+                    [{d:2000,b:1000}]
+                ]
+            },
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+            },
+            $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+            }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        //responsive code begin
+        //you can remove responsive code if you don't want the slider scales while window resizing
+        function ScaleSlider() {
+            var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+            if (refSize) {
+                refSize = Math.min(refSize, 600);
+                jssor_1_slider.$ScaleWidth(refSize);
+            }
+            else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+        ScaleSlider();
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        //responsive code end
+    });
+</script>
+</body>
+</html>

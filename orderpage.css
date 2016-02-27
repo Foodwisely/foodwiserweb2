@@ -1,0 +1,165 @@
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown1:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item{
+    color:black;
+}
+.top-menu{
+    background-color:#66ff66 ;
+    border-color: #66ff66;
+    padding: 10px 0 10px 0;
+}
+
+.top-bar-dropdown{
+    background-color:#ffffff;
+    padding: 10px 0 10px 0;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 30%;
+    margin: auto;
+}
+
+.jssorb01 {
+    position: absolute;
+}
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 12px;
+    height: 12px;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    overflow: hidden;
+    cursor: pointer;
+    border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+/* jssor slider arrow navigator skin 02 css */
+/*
+.jssora02l                  (normal)
+.jssora02r                  (normal)
+.jssora02l:hover            (normal mouseover)
+.jssora02r:hover            (normal mouseover)
+.jssora02l.jssora02ldn      (mousedown)
+.jssora02r.jssora02rdn      (mousedown)
+*/
+.jssora02l, .jssora02r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url('images/navigation.png') no-repeat;
+    overflow: hidden;
+}
+.jssora02l { background-position: -3px -33px; }
+.jssora02r { background-position: -63px -33px; }
+.jssora02l:hover { background-position: -123px -33px; }
+.jssora02r:hover { background-position: -183px -33px; }
+.jssora02l.jssora02ldn { background-position: -3px -33px; }
+.jssora02r.jssora02rdn { background-position: -63px -33px; }
+
+
+.float-right{
+    float: right;
+}
+.clear-all{
+    clear: both;
+}
+.white-color{
+    color: white;
+}
+.light-green{
+    background-color: white;
+}
+.white-color-background{
+    background-color: white;
+}
+.vert-dropdown-ul
+{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.container-modified{
+    margin: 0 35px 0 35px;
+}
+.left-row{
+    padding-bottom: 100px;
+}
+.xx-largefont{
+    font-size: larger;
+}
+.margin-auto{
+    margin: 20px auto;
+}
+.box-with-value{
+    height:30px;
+    width:30px;
+    border: #98c5ff solid thin;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    padding-top: 2px;
+}
+h2{
+    text-align: center;
+}
+.border-right-thin{
+    border-right: solid #ffa8d8 thin;
+}
+hr.food-menu-hr{
+    height: 4px;
+    background-color: #333;
+}
+.invisible{
+    visibility: hidden;
+}
+.full-size-img{
+    width: 60%;
+}
+.food-item-block-outer{
+    padding: 4px;
+}
+.food-item-block-inner{
+    border: thin solid #eeeeee;
+    background-color: #fafafa;/*#A6FFA6*/
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    padding: 6px;
+}
+.reduce-size {
+    display:inline-block;
+    width:100%;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+#footer{
+    height: 60px;
+    background-color: #f5f5f5;
+}
+.credit {
+    margin: 20px 0;
+}
+.muted {
+    color: #999999;
+}
