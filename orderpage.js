@@ -32,4 +32,44 @@ app.controller('commonController', function($scope) {
             desc: "A delightful combo of rice, chawal and daal from the dry state of Gujrat",
             calories: 100}]
 
+    $scope.tabmenuactivity = function(index){
+    if(index==0)
+    {
+        //var url="http://localhost:63342/untitled3/orderpage.html"
+        //window.location=url;
+        document.getElementById('breakfastbar').style.display='block';
+        document.getElementById('lunchbar').style.display='none';
+        document.getElementById('dinnerbar').style.display='none';
+        document.getElementById('partybar').style.display='none';
+    }
+        if(index==1)
+        {
+            document.getElementById('breakfastbar').style.display='none';
+            document.getElementById('lunchbar').style.display='block';
+            document.getElementById('dinnerbar').style.display='none';
+            document.getElementById('partybar').style.display='none';
+        }
+        if(index==2){
+            document.getElementById('breakfastbar').style.display='none';
+            document.getElementById('lunchbar').style.display='none';
+            document.getElementById('dinnerbar').style.display='block';
+            document.getElementById('partybar').style.display='none';
+        }
+        if(index==3){
+            document.getElementById('breakfastbar').style.display='none';
+            document.getElementById('lunchbar').style.display='none';
+            document.getElementById('dinnerbar').style.display='none';
+            document.getElementById('partybar').style.display='block';
+        }
+
+
+    }
+
+
+
+
+
+
 });
+
+

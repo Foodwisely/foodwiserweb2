@@ -15,16 +15,64 @@
 .dropdown-item{
     color:black;
 }
+
+.slider-shadow{
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
 .top-menu{
     background-color:#66ff66 ;
     border-color: #66ff66;
     padding: 10px 0 10px 0;
 }
 
+
 .top-bar-dropdown{
     background-color:#ffffff;
-    padding: 10px 0 10px 0;
+    padding: 0px 0 0px 0;
 }
+
+.filter-main{
+    background: #ffffff;;
+    border: 1px solid rgba(151,151,151,0.2);
+    box-shadow: 0 2px 4px 0
+    rgba(204,204,204,0.24);
+    text-align: center;
+    font-size: 0;
+    display: table;
+    width: 100%;
+}
+
+.tab-menu{
+    margin-top:20px; ;
+    background: #ffffff;
+    border: 1px solid rgba(151,151,151,0.2);
+    box-shadow: 1px 2px 4px 1px;
+    text-align: center;
+    height: 35px;
+    font-size: 18px;
+}
+
+.tab-menu-items{
+    position: relative;
+    text-decoration: none;
+    color:#000000;
+}
+.tab-menu:hover{
+    background-color:greenyellow;
+    padding: 0%;
+    border-width: 0px;
+    font-weight: bolder;
+}
+
+.undertabmenu-line{
+    border-color:orange;
+    border-width: 3px;
+    display: none;
+    padding: 0%;
+}
+
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -64,8 +112,8 @@
     display: block;
     position: absolute;
     /* size of arrow element */
-    width: 55px;
-    height: 55px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
     background: url('images/navigation.png') no-repeat;
     overflow: hidden;
@@ -122,8 +170,14 @@
 h2{
     text-align: center;
 }
-.border-right-thin{
-    border-right: solid #ffa8d8 thin;
+.border-box{
+    border: solid rgba(151,151,151,0.2);
+    height:45px;
+    text-align: center;
+}
+.border-box:hover{
+    background-color:greenyellow;
+    padding:0%;
 }
 hr.food-menu-hr{
     height: 4px;

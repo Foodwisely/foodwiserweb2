@@ -58,7 +58,7 @@
 </nav><!--  Top menu end shere  -->
 <div class="container-modified"><!--  Mid Container Starts here-->
     <div class="row ">
-        <div class="col-md-3 col-lg-3 white-color-background left-row well">&nbsp;
+        <div class="col-sm-3 col-md-3 col-lg-3 white-color-background left-row well">&nbsp;
             <h2 style="font-weight: bold;">Categories</h2>
             <hr/>
             <form action="">
@@ -77,30 +77,9 @@
                 <div class="clear-all"></div>
             </form>
         </div>
-        <div class="col-md-6 col-lg-6 white-color-background centre-row  well">
-            <div class="row">
-                <div class="col-md-3 col-lg-3">
-                    <h4 class=" border-right-thin">Breakfast</h4>
-                    <hr class="food-menu-hr"/>
-                    <br/>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <h4 class=" border-right-thin">Lunch</h4>
-                    <hr class="food-menu-hr invisible"/>
-                    <br/>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <h4 class=" border-right-thin">Dinner</h4>
-                    <hr class="food-menu-hr invisible"/>
-                    <br/>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <h4 class=" border-right-thin">Party Planner</h4>
-                    <hr class="food-menu-hr invisible"/>
-                    <br/>
-                </div>
-                </div>
-                    <div id="jssor_1" style="position: relative; margin: 0 auto; right: 0px; top: 0px; left: 0px; width: 600px; height: 230px; overflow: hidden; visibility: hidden;">
+        <div class="col-sm-6 col-md-6 col-lg-6 white-color-background centre-row  well">
+
+                    <div id="jssor_1" class="slider-shadow" style="position: relative; margin:0 auto; top: 0px; left:0px; width: 600px; height: 230px; overflow: hidden; visibility: hidden;">
                         <!-- Loading Screen -->
                         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
                             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
@@ -132,19 +111,50 @@
                                 <div data-u="caption" data-t="0" style="position: absolute; top: 320px; background-color: #000000; font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">Discount Offers</div>
                                 </a>
                             </div>
-                            <div data-u="navigator" class="jssorb01" style="bottom:36px;right:16px;">
+                            <div data-u="navigator" class="jssorb01" style="bottom:36px;right:250px;">
                                 <div data-u="prototype" style="width:12px;height:12px;"></div>
                             </div>
                             <!-- Arrow Navigator -->
-                            <span data-u="arrowleft" class="jssora02l" style="top:75px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
-                            <span data-u="arrowright" class="jssora02r" style="top:75px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+                            <!--<span data-u="arrowleft" class="jssora02l" style="top:85px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>-->
+                            <!--<span data-u="arrowright" class="jssora02r" style="top:85px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>-->
                         </div>
                         </div>
-             &nbsp;
+             &nbsp; &nbsp;&nbsp;
+
+            <ul class="nav nav-tab">
+                <div class="row">
+                    <a href="#" data-toggle="tab" ng >
+                    <div class="col-sm-3 col-md-3 col-lg-3 tab-menu" ng-click="tabmenuactivity(0)">
+                <li class=""><span class="tab-menu-items">Breakfast</span></li>
+                        <hr class="undertabmenu-line" id="breakfastbar"/>
+                    </div>
+                    </a>
+                    <a href="#"data-toggle="tab" >
+                    <div class="col-sm-3 col-md-3 col-lg-3 tab-menu" ng-click="tabmenuactivity(1)">
+                <li class=""><span class="tab-menu-items">Lunch</span></li>
+                        <hr class="undertabmenu-line" id="lunchbar"/>
+                    </div>
+                    </a>
+                    <a href="#"data-toggle="tab">
+                    <div class="col-sm-3 col-md-3 col-lg-3 tab-menu" ng-click="tabmenuactivity(2)">
+                <li class=""><span class="tab-menu-items">Dinner</span></li>
+                        <hr class="undertabmenu-line" id="dinnerbar"/>
+                    </div>
+                    </a>
+                    <a href="#"data-toggle="tab">
+                    <div class="col-sm-3 col-md-3 col-lg-3 tab-menu" ng-click="tabmenuactivity(3)">
+                <li class=""><span class="tab-menu-items"/>Party Planner</span></li>
+                        <hr class="undertabmenu-line" id="partybar">
+                    </div>
+                    </a>
+                </div>
+            </ul>
+
+            &nbsp; &nbsp;&nbsp;
 
             <div class="row">
                 <div ng-repeat="item in lunchItems">
-                    <div class="food-item-block-outer col-md-4 col-lg-4 clear-fix">
+                    <div class="food-item-block-outer col-sm-3 col-md-4 col-lg-4 clear-fix">
                         <div class="food-item-block-inner">
                             <div class="img-block">
                                 <img src="images/download.jpg" class="full-size-img img-rounded"/>
@@ -154,7 +164,7 @@
                                 <h6>Calories: {{item.calories}}</h6>
                                 <span class="reduce-size">{{item.desc}}</span>
                                 <div class="row">
-                                    <div class="col-md-4 col-lg-4 col-md-offset-8 col-lg-offset-8">
+                                    <div class="col-sm-4 col-md-4 col-lg-4 col-md-offset-8 col-lg-offset-8">
                                         <span class="glyphicon glyphicon-plus"></span>
                                         <span class="glyphicon glyphicon-minus"></span>
                                     </div>
@@ -165,7 +175,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-lg-3 white-color-background right-row  well">
+        <div class="col-sm-3 col-md-3 col-lg-3 white-color-background right-row  well">
             <h2>Your Order</h2>
             <hr/>
             <div class="list-of-orders">
